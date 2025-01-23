@@ -1,6 +1,7 @@
 name: zego_uikit_signaling_plugin
 description: ZegoUIKitSignalingPlugin is a low-code plugin collection that provides the signal related function extensions for ZegoUIit, helps you to integarte features easier and faster.
 version: 2.8.8
+publish_to: none
 homepage: https://www.zegocloud.com/
 repository: https://github.com/ZEGOCLOUD/zego_uikit_signaling_plugin_flutter
 
@@ -20,6 +21,15 @@ dependencies:
 
   flutter_logs: ^2.2.1
   plugin_platform_interface: ^2.1.8
+  celestial:
+    git:
+      url: https://github.com/fegno/Celestial.Flutter.git
+      ref: master
+
+dependency_overrides:
+  web: any
+  intl: any
+  package_info_plus: any
 
 dev_dependencies:
   flutter_test:
